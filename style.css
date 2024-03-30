@@ -1,24 +1,23 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: gilroy;
-}
-html,body
-{
-height: 100%;
-width: 100%;
-background-color: #F7F7F7;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
 }
 
-*::selection
-{
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+*::selection {
     background-color: black;
     color: white;
 }
 
-#nav
-{
+#nav {
     width: 100%;
     padding: 20px;
     display: flex;
@@ -28,22 +27,19 @@ background-color: #F7F7F7;
     z-index: 99;
 }
 
-#right-nav
-{
+#right-nav {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
 }
 
-#right-nav #links
-{
+#right-nav #links {
     display: flex;
     gap: 50px;
 }
 
-#right-nav #links a
-{
+#right-nav #links a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -52,8 +48,7 @@ background-color: #F7F7F7;
     padding: 5px 0px;
 }
 
-#right-nav #links a .line
-{
+#right-nav #links a .line {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -63,13 +58,11 @@ background-color: #F7F7F7;
     transition: all .5s ease;
 }
 
-#right-nav #links a:hover .line
-{
-    width: 100%;   
+#right-nav #links a:hover .line {
+    width: 100%;
 }
 
-#right-nav #icons
-{
+#right-nav #icons {
     font-size: 18px;
     background-color: #F7F7F7;
     padding: 8px 20px;
@@ -78,20 +71,17 @@ background-color: #F7F7F7;
     gap: 50px;
 }
 
-#left-nav
-{
+#left-nav {
     height: 60px;
     /* background-color: red; */
     overflow: hidden;
 }
 
-#left-nav svg
-{
+#left-nav svg {
     display: block;
 }
 
-#page1
-{
+#page1 {
     width: 100%;
     min-height: 100vh;
     position: relative;
@@ -99,24 +89,20 @@ background-color: #F7F7F7;
     padding-top: 230px;
 }
 
-#page1 #second
-{
+#page1 #second {
     display: flex;
     justify-content: space-between;
 }
 
-.bounding
-{
+.bounding {
     overflow-y: hidden;
 }
 
-.heading
-{
+.heading {
     transform: translateY(100%);
 }
 
-.bounding h1
-{
+.bounding h1 {
     font-family: Futura;
     text-transform: uppercase;
     font-size: 15.3vw;
@@ -125,24 +111,31 @@ background-color: #F7F7F7;
     letter-spacing: -3px;
 }
 
-#page1 #video-container
-{
+#page1 #video-container {
     margin-top: 30px;
     height: 100vh;
-    width: 100%;
+    width: 90%;
     background-color: lightgray;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
 
-#page1 #video-container video
-{
+#page1 #video-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#page1 #video-container video {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#page1 #video-container #play
-{
+#page1 #video-container #play {
     pointer-events: none;
     font-family: futura;
     height: 80px;
@@ -160,19 +153,17 @@ background-color: #F7F7F7;
     scale: 0;
 }
 
-#p1footer
-{
+#p1footer {
     margin-top: 30px;
     width: 100%;
-    padding: 2px 0 ;
+    padding: 2px 0;
     border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
     font-size: .8rem;
 }
 
-#page2
-{
+#page2 {
     /* min-height: 100vh; */
     width: 100%;
     padding: 0 20px;
@@ -185,8 +176,7 @@ background-color: #F7F7F7;
     overflow: hidden;
 }
 
-#page2 .elem
-{
+#page2 .elem {
     height: 50vw;
     width: 32.5%;
     overflow: hidden;
@@ -195,8 +185,7 @@ background-color: #F7F7F7;
     justify-content: center;
 }
 
-#page2 .elem img
-{
+#page2 .elem img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -204,8 +193,7 @@ background-color: #F7F7F7;
 }
 
 
-#page2 .elem .dets
-{
+#page2 .elem .dets {
     height: 50px;
     width: 320px;
     border-radius: 25px;
@@ -218,21 +206,18 @@ background-color: #F7F7F7;
     padding: 18px 0;
 }
 
-#page2 .elem .dets:hover
-{
+#page2 .elem .dets:hover {
     height: 250px;
 }
 
-#page2 .elem .dets .head
-{
+#page2 .elem .dets .head {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
 }
 
-#page2 .elem .dets .circle
-{
+#page2 .elem .dets .circle {
     height: 8px;
     width: 8px;
     border-radius: 50%;
@@ -240,8 +225,7 @@ background-color: #F7F7F7;
 
 }
 
-#page2 .elem .dets a
-{
+#page2 .elem .dets a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -249,13 +233,11 @@ background-color: #F7F7F7;
     font-size: 13px;
 }
 
-#page2 .elem .dets .n
-{
+#page2 .elem .dets .n {
     font-weight: 700;
 }
 
-#page2 .elem .dets .mid
-{
+#page2 .elem .dets .mid {
     display: flex;
     align-items: center;
     width: 100%;
@@ -265,21 +247,18 @@ background-color: #F7F7F7;
 
 }
 
-#page2 .elem .dets:hover .mid
-{
-    display:flex;
+#page2 .elem .dets:hover .mid {
+    display: flex;
 }
 
-#page2 .elem .dets .mid img
-{
+#page2 .elem .dets .mid img {
     width: 100px;
     height: 100px;
     margin-left: 35px;
 }
 
 
-#page2 .elem .dets .mid h5
-{
+#page2 .elem .dets .mid h5 {
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 500;
@@ -289,8 +268,7 @@ background-color: #F7F7F7;
 
 
 
-#page3
-{
+#page3 {
     width: 100%;
     padding: 0 20px;
     display: flex;
@@ -298,8 +276,7 @@ background-color: #F7F7F7;
     padding-top: 5vw;
 }
 
-#page3 h1
-{
+#page3 h1 {
     font-size: 50px;
     line-height: 1;
     font-family: Futura;
@@ -307,13 +284,11 @@ background-color: #F7F7F7;
     /* background-color: red; */
 }
 
-#page3 #rightpara
-{
+#page3 #rightpara {
     width: 32.5%;
 }
 
-#page3 #rightpara p
-{
+#page3 #rightpara p {
     width: 70%;
     font-size: 16px;
     font-weight: 400;
@@ -321,7 +296,7 @@ background-color: #F7F7F7;
     margin-bottom: 30px;
 }
 
-#page3 #rightpara a button{
+#page3 #rightpara a button {
     font-size: 12px;
     font-weight: 500;
     background-color: transparent;
@@ -331,8 +306,7 @@ background-color: #F7F7F7;
     color: rgb(109, 109, 109);
 }
 
-#page4
-{
+#page4 {
     min-height: 120vh;
     width: 100%;
     /* background-color: lightblue; */
@@ -344,8 +318,7 @@ background-color: #F7F7F7;
 
 }
 
-#page4 .child
-{
+#page4 .child {
     /* min-height: 50vw; */
     width: 40vw;
     /* background-color: red; */
@@ -359,15 +332,13 @@ background-color: #F7F7F7;
     cursor: pointer;
 }
 
-#page4 .child img
-{
+#page4 .child img {
     height: 35vw;
     width: 100%;
     /* background-color: yellow; */
 }
 
-#page4 .child h5
-{
+#page4 .child h5 {
     /* margin-top: 8vw; */
     text-align: center;
     font-size: 13px;
@@ -376,8 +347,7 @@ background-color: #F7F7F7;
     /* line-height: 2; */
 }
 
-#page4 .child h6
-{
+#page4 .child h6 {
     margin-top: 5px;
     text-align: center;
     font-size: 12px;
@@ -386,31 +356,28 @@ background-color: #F7F7F7;
     /* line-height: 2; */
 }
 
-#page4footer
-{
+#page4footer {
     margin-top: 5vw;
     width: calc(100% - 40px);
     margin-left: 20px;
-    padding: 2px 0 ;
+    padding: 2px 0;
     border-bottom: 2px solid black;
     display: flex;
     justify-content: space-between;
     font-size: 12px;
 }
 
-#cursor
-{
+#cursor {
     height: 150px;
     width: 150px;
     border-radius: 50%;
     position: fixed;
     /* z-index: 10; */
-    transform: translate(-50% , -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     background-color: blanchedalmond;
 }
 
-#page5
-{
+#page5 {
     height: 100vh;
     width: 100%;
     /* background-color: red; */
@@ -418,28 +385,24 @@ background-color: #F7F7F7;
 }
 
 
-#page5 #slider
-{
+#page5 #slider {
     margin-top: 80px;
     width: 100%;
     white-space: nowrap;
     overflow-x: auto;
 }
 
-#page5 #slider::-webkit-scrollbar
-{
+#page5 #slider::-webkit-scrollbar {
     display: none;
 }
 
-#page5 #slider button
-{
+#page5 #slider button {
     padding: 0 6vw;
     background-color: transparent;
     border: none;
 }
 
-#page5 #slider button .c
-{
+#page5 #slider button .c {
     height: 16px;
     width: 16px;
     /* background-color: black; */
@@ -448,13 +411,11 @@ background-color: #F7F7F7;
     margin-bottom: 20px;
 }
 
-#page5 #slider button span
-{
+#page5 #slider button span {
     font-size: 18px;
 }
 
-#page5 .heading
-{
+#page5 .heading {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,8 +423,7 @@ background-color: #F7F7F7;
     gap: 60px;
 }
 
-#page5 .heading h1
-{
+#page5 .heading h1 {
     font-family: futura;
     margin-top: 10vw;
     font-size: 50px;
@@ -472,30 +432,26 @@ background-color: #F7F7F7;
     width: 70%;
 }
 
-#page5 .heading button
-{
+#page5 .heading button {
     padding: 20px 70px;
     border-radius: 50px;
     font-weight: 600;
-    background-color:black;
+    background-color: black;
     color: white;
     transition: .2s;
 }
 
-#page5 p
-{
+#page5 p {
     width: 270px;
     text-align: center;
 }
 
-#page5 button:hover
-{
+#page5 button:hover {
     color: gray;
 }
 
 
-#page6
-{
+#page6 {
     min-height: 100vh;
     padding: 5vw 20px;
     width: 100%;
@@ -504,28 +460,25 @@ background-color: #F7F7F7;
     justify-content: space-between;
 }
 
-#page6 #left
-{
+#page6 #left {
     width: 33%;
 }
 
-#page6 #left h1
-{
+#page6 #left h1 {
     font-size: 30px;
     line-height: 1;
     font-family: Futura;
 }
 
-#page6 #left p
-{
+#page6 #left p {
     width: 75%;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin: 30px 0 ;
+    margin: 30px 0;
 }
 
-#page6 #left a button{
+#page6 #left a button {
     font-size: 12px;
     font-weight: 500;
     background-color: transparent;
@@ -535,28 +488,24 @@ background-color: #F7F7F7;
     color: rgb(109, 109, 109);
 }
 
-#page6 #right
-{
+#page6 #right {
     display: flex;
     gap: 20px;
 }
 
-#page6 #right .image-container
-{
+#page6 #right .image-container {
     width: 30vw;
     overflow: hidden;
 }
 
-#page6 #right .image-container img
-{
+#page6 #right .image-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     scale: 1.1;
 }
 
-#email
-{
+#email {
     width: 100%;
     display: flex;
     align-items: center;
@@ -565,8 +514,7 @@ background-color: #F7F7F7;
     padding-top: 50px;
 }
 
-input
-{
+input {
     width: 100%;
     font-size: 40px;
     font-family: futura;
@@ -587,22 +535,19 @@ input:not(:focus)::placeholder {
     color: black;
 }
 
-#email i
-{
+#email i {
     font-size: 30px;
     font-weight: 0;
     border-bottom: 1px solid gray;
     height: 50px;
 }
 
-#page7
-{
+#page7 {
     width: 100%;
     padding: 20vh 20px;
 }
 
-#page7 #top
-{
+#page7 #top {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -610,8 +555,7 @@ input:not(:focus)::placeholder {
     position: relative;
 }
 
-#page7 #down
-{
+#page7 #down {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -620,86 +564,74 @@ input:not(:focus)::placeholder {
     margin-top: 70px;
 }
 
-#page7 #down #ctp
-{
+#page7 #down #ctp {
     display: flex;
     /* gap: 50px; */
 }
 
-#page7 #down #ctp h5
-{
+#page7 #down #ctp h5 {
     color: gray;
     font-weight: 400;
 }
 
-#page7 #down p
-{
+#page7 #down p {
     text-align: center;
     width: 70%;
     font-size: 15px;
 }
 
-#fleft span,#fright span
-{
+#fleft span,
+#fright span {
     color: gray;
     font-size: .8rem;
 }
 
-#fright
-{
+#fright {
     text-align: right;
 }
 
-#page7 .links
-{
+#page7 .links {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
 }
 
-#page7 .links a
-{
+#page7 .links a {
     text-decoration: none;
     color: black;
     line-height: 1.3;
 }
 
-#page7 #fmid svg
-{
+#page7 #fmid svg {
     height: 20vw;
     width: 30vw;
 }
 
 
-@media(max-width:500px)
-{
-    #right-nav #links
-    {
+@media(max-width:500px) {
+    #right-nav #links {
         display: none;
     }
 
-    #page1
-    {
+    #page1 {
         min-height: 75vh;
     }
-    #page1 #video-container
-    {
+
+    #page1 #video-container {
         height: 30vh;
     }
 
-    #page1 #video-container #play
-    {
+    #page1 #video-container #play {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50% ,-50%);
+        transform: translate(-50%, -50%);
         opacity: 1;
         scale: 1;
     }
 
 
-    #page2
-    {
+    #page2 {
         min-height: 100vh;
         width: 100%;
         padding: 0 20px;
@@ -709,65 +641,55 @@ input:not(:focus)::placeholder {
         flex-direction: column;
     }
 
-    #page2 .elem
-    {
+    #page2 .elem {
         height: 100vh;
         width: 100%;
     }
 
-    #page3
-    {
+    #page3 {
         flex-direction: column;
     }
 
-    #page3 h1
-    {
+    #page3 h1 {
         font-size: 32px;
         width: 100%;
         text-align: center;
         margin: 30px 0;
     }
 
-    #page3 #rightpara
-    {
+    #page3 #rightpara {
         width: 100%;
     }
 
-    #page3 #rightpara p
-    {
+    #page3 #rightpara p {
         width: 100%;
         text-align: center;
     }
 
-    #page3 #rightpara a{
+    #page3 #rightpara a {
         display: flex;
         justify-content: center;
         text-decoration: none;
     }
 
-    #page5
-    {
-       padding-top: 15vh;
+    #page5 {
+        padding-top: 15vh;
     }
 
-    #page6
-    {
+    #page6 {
         flex-direction: column-reverse;
     }
 
-    #page6 #left
-    {
+    #page6 #left {
         width: 100%;
     }
 
-    #page6 #right .image-container
-    {
+    #page6 #right .image-container {
         width: 50%;
         margin-bottom: 20px;
     }
 
-    #email input
-    {
+    #email input {
         font-size: 25px;
         height: 60px;
         padding-bottom: 40px;
@@ -778,54 +700,46 @@ input:not(:focus)::placeholder {
         white-space: wrap;
     }
 
-    #email i
-    {
+    #email i {
         font-size: 20px;
         font-weight: 0;
         border-bottom: 1px solid gray;
         height: 60px;
     }
 
-    #page7
-    {
+    #page7 {
         padding-bottom: 3vh;
     }
 
-    #page7 #down
-    {
+    #page7 #down {
         flex-direction: column-reverse;
     }
 
 
-    #page7 #down #ctp
-    {
+    #page7 #down #ctp {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
 
-    #page7 #down #ctp h5
-    {
+    #page7 #down #ctp h5 {
         color: gray;
         font-weight: 400;
         white-space: nowrap;
         font-size: 12px;
     }
 
-    #page7 #down p
-    {
+    #page7 #down p {
         text-align: start;
         width: fit-content;
         font-size: 15px;
     }
 
-    #fright
-    {
+    #fright {
         text-align: left;
     }
 
-    #page7 #fmid svg
-    {
+    #page7 #fmid svg {
         height: 50px;
         width: 50px;
         position: absolute;
@@ -836,80 +750,68 @@ input:not(:focus)::placeholder {
 }
 
 
-@media(max-width:1020px)
-{
-    #right-nav #links
-    {
+@media(max-width:1020px) {
+    #right-nav #links {
         display: none;
-    }    
-        #page2
-    {
+    }
+
+    #page2 {
         flex-direction: column;
     }
-        #page2 .elem
-    {
+
+    #page2 .elem {
         height: 100vh;
         width: 100%;
     }
 
-    #page3
-    {
+    #page3 {
         flex-direction: column;
     }
 
-    #page3 h1
-    {
+    #page3 h1 {
         font-size: 32px;
         width: 100%;
         text-align: center;
         margin: 30px 0;
     }
 
-    #page3 #rightpara
-    {
+    #page3 #rightpara {
         width: 100%;
     }
 
-    #page3 #rightpara p
-    {
+    #page3 #rightpara p {
         width: 100%;
         text-align: center;
     }
 
-    #page3 #rightpara a{
+    #page3 #rightpara a {
         display: flex;
         justify-content: center;
         text-decoration: none;
     }
 
-    #page5
-    {
-       padding-top: 15vh;
+    #page5 {
+        padding-top: 15vh;
     }
 
-    #page5 .heading h1
-    {    
+    #page5 .heading h1 {
         font-size: 30px;
     }
 
-    #page6
-    {
+    #page6 {
         flex-direction: column-reverse;
     }
 
-    #page6 #left
-    {
+    #page6 #left {
         width: 100%;
     }
 
-    #page6 #right .image-container
-    {
+    #page6 #right .image-container {
         width: 50%;
         margin-bottom: 20px;
     }
 
-    #email input
-    {
+    #email input {
         font-size: 25px;
         height: 60px;
         padding-bottom: 40px;
@@ -920,48 +822,41 @@ input:not(:focus)::placeholder {
         white-space: wrap;
     }
 
-    #email i
-    {
+    #email i {
         font-size: 20px;
         font-weight: 0;
         border-bottom: 1px solid gray;
         height: 60px;
     }
 
-    #page7
-    {
+    #page7 {
         padding-bottom: 3vh;
     }
 
-    #page7 #down
-    {
+    #page7 #down {
         flex-direction: column-reverse;
     }
 
-    #page7 #down #ctp
-    {
+    #page7 #down #ctp {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
 
-    #page7 #down #ctp h5
-    {
+    #page7 #down #ctp h5 {
         color: gray;
         font-weight: 400;
         white-space: nowrap;
         font-size: 12px;
     }
 
-    #page7 #down p
-    {
+    #page7 #down p {
         text-align: start;
         width: fit-content;
         font-size: 15px;
     }
 
-    #fright
-    {
+    #fright {
         text-align: left;
     }
 
